@@ -1,34 +1,31 @@
-# Trainano AI Website
+# Transovo AI Website
 
 Static HTML/CSS/JS site for Cloudflare Pages.
 
-## Clean URLs
+Transovo AI LLC is presented as the parent software company for cloud applications, communications infrastructure, and AI workflow technology. Local SEO Express is featured as a product under that platform.
 
-Pages use folder `index.html` files so routes stay extension-free:
+## Clean URLs
 
 | URL | File |
 | --- | --- |
 | `/` | `index.html` |
-| `/about` | `about/index.html` |
 | `/solutions` | `solutions/index.html` |
 | `/technology` | `technology/index.html` |
 | `/company` | `company/index.html` |
-| `/careers` | `careers/index.html` |
 | `/contact` | `contact/index.html` |
+| `/privacy` | `privacy/index.html` |
+| `/terms` | `terms/index.html` |
+| `/acceptable-use` | `acceptable-use/index.html` |
 
-`_redirects` maps common `.html` paths to the clean routes.
+`_redirects` maps common legacy paths (including `/about`) to clean routes.
 
 ## Local preview
-
-Serve the project root with any static server, for example:
 
 ```bash
 npx --yes serve .
 ```
 
-Then open `http://localhost:3000`.
-
 ## Cloudflare Pages
 
-- **Build command:** none (static)
+- **Build command:** none
 - **Output directory:** `/` (project root)

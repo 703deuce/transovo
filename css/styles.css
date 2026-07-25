@@ -590,6 +590,44 @@ button {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.footer-simple {
+  text-align: center;
+  max-width: 44rem;
+  margin-inline: auto;
+  padding: 0.25rem 0 0.5rem;
+}
+
+.footer-simple p {
+  margin: 0 0 0.45rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+}
+
+.footer-simple p:first-child {
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-simple a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-simple a:hover {
+  color: #fff;
+}
+
+.footer-legal-links {
+  margin-top: 0.85rem !important;
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.site-footer:has(.footer-simple) {
+  padding: 2.75rem 0 2rem;
+}
+
 /* Interior pages */
 .page-hero {
   padding: 3.75rem 0 2.5rem;

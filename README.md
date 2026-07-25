@@ -1,23 +1,16 @@
 # Transovo AI Website
 
-Static HTML/CSS/JS site for Cloudflare Pages.
+Static HTML/CSS/JS site for Cloudflare Pages (Twilio / ISV ready).
 
-Transovo AI LLC is presented as the parent software company for cloud applications, communications infrastructure, and AI workflow technology. Local SEO Express is featured as a product under that platform.
-
-## Clean URLs
+## Primary pages
 
 | URL | File |
 | --- | --- |
 | `/` | `index.html` |
-| `/solutions` | `solutions/index.html` |
-| `/technology` | `technology/index.html` |
-| `/company` | `company/index.html` |
-| `/contact` | `contact/index.html` |
 | `/privacy` | `privacy/index.html` |
 | `/terms` | `terms/index.html` |
-| `/acceptable-use` | `acceptable-use/index.html` |
 
-`_redirects` maps common legacy paths (including `/about`) to clean routes.
+Contact details appear on the homepage and in the footer (no separate contact page required).
 
 ## Local preview
 

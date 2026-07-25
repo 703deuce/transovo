@@ -11,20 +11,16 @@
     <link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container nav">
         <a class="logo" href="/">
-          <img class="logo-mark" src="/assets/logo.svg" alt="" width="34" height="34" />
+          <img class="logo-mark" src="/assets/logo.svg" alt="" width="36" height="36" />
           Transovo AI
         </a>
-
         <nav aria-label="Primary">
           <ul class="nav-links">
             <li><a href="/solutions">Solutions</a></li>
@@ -33,7 +29,6 @@
             <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
-
         <div class="nav-actions">
           <a class="btn btn-primary" href="/contact">Contact Us</a>
           <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
@@ -62,35 +57,37 @@
             </div>
           </div>
           <div class="hero-visual reveal" aria-hidden="true">
-            <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" role="img">
+            <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" role="img">
               <defs>
-                <linearGradient id="wave" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#9ec5ef" stop-opacity="0.9" />
-                  <stop offset="100%" stop-color="#d7e8f8" stop-opacity="0.25" />
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#8fbee6" stop-opacity="0.95" />
+                  <stop offset="100%" stop-color="#cfe3f5" stop-opacity="0.2" />
+                </linearGradient>
+                <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#5b97cf" stop-opacity="0.55" />
+                  <stop offset="100%" stop-color="#d7eaf8" stop-opacity="0.1" />
                 </linearGradient>
               </defs>
-              <path
-                d="M40 280 C120 180, 180 360, 260 250 C340 140, 400 300, 500 180"
-                stroke="url(#wave)"
-                stroke-width="28"
-                fill="none"
-                stroke-linecap="round"
-              />
-              <path
-                d="M20 210 C110 120, 170 280, 250 190 C330 100, 390 240, 510 150"
-                stroke="#c5daf0"
-                stroke-width="14"
-                fill="none"
-                stroke-linecap="round"
-              />
-              <circle cx="120" cy="180" r="10" fill="#1a4a8a" opacity="0.7" />
-              <circle cx="250" cy="190" r="14" fill="#0b1f3a" />
-              <circle cx="360" cy="155" r="9" fill="#4a90e2" />
-              <circle cx="450" cy="205" r="11" fill="#1a4a8a" opacity="0.55" />
-              <g stroke="#7eb3f0" stroke-width="2" opacity="0.7">
-                <line x1="120" y1="180" x2="250" y2="190" />
-                <line x1="250" y1="190" x2="360" y2="155" />
-                <line x1="360" y1="155" x2="450" y2="205" />
+              <path d="M20 300C110 170 170 390 270 250C370 110 430 320 540 180" stroke="url(#g1)" stroke-width="34" fill="none" stroke-linecap="round"/>
+              <path d="M10 220C105 110 165 300 255 195C345 90 415 260 550 150" stroke="url(#g2)" stroke-width="18" fill="none" stroke-linecap="round"/>
+              <path d="M40 150C120 90 180 210 250 140C320 70 390 180 500 110" stroke="#b9d6ef" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.85"/>
+              <g fill="#0b2a4a">
+                <circle cx="118" cy="178" r="9" opacity="0.75"/>
+                <circle cx="250" cy="190" r="13"/>
+                <circle cx="355" cy="148" r="8" opacity="0.8"/>
+                <circle cx="455" cy="198" r="10" opacity="0.7"/>
+                <circle cx="300" cy="265" r="7" opacity="0.55"/>
+              </g>
+              <g stroke="#6ea8d8" stroke-width="2" opacity="0.8">
+                <line x1="118" y1="178" x2="250" y2="190"/>
+                <line x1="250" y1="190" x2="355" y2="148"/>
+                <line x1="355" y1="148" x2="455" y2="198"/>
+                <line x1="250" y1="190" x2="300" y2="265"/>
+              </g>
+              <g fill="#2f6fad" opacity="0.35">
+                <circle cx="180" cy="240" r="4"/>
+                <circle cx="390" cy="220" r="4"/>
+                <circle cx="320" cy="120" r="3.5"/>
               </g>
             </svg>
           </div>
@@ -101,71 +98,64 @@
         <div class="container">
           <div class="section-head reveal">
             <h2>What We Do</h2>
-            <p>
-              Software platforms and infrastructure that connect AI, communications, and business
-              applications.
-            </p>
           </div>
           <div class="services-grid">
-            <article class="service-card reveal">
-              <div class="service-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3l2.2 4.5L19 8.2l-3.5 3.4.8 4.9L12 14.2 7.7 16.5l.8-4.9L5 8.2l4.8-.7L12 3z" stroke="currentColor" stroke-width="1.7" />
+            <article class="service reveal">
+              <div class="icon-circle" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l2.1 4.3L19 8l-3.4 3.3.8 4.7L12 13.8 7.6 16l.8-4.7L5 8l4.9-.7L12 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
                 </svg>
               </div>
               <h3>AI Software</h3>
-              <p>
-                Custom software and intelligent automation solutions that streamline business
-                operations.
-              </p>
+              <p>Custom software and intelligent automation solutions that streamline business operations.</p>
             </article>
-            <article class="service-card reveal">
-              <div class="service-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 8h16M4 16h16M8 4v16M16 4v16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            <article class="service reveal">
+              <div class="icon-circle" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                  <path d="M4.5 8.5h15M4.5 15.5h15M8.5 4.5v15M15.5 4.5v15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                 </svg>
               </div>
               <h3>Communications Platform</h3>
-              <p>
-                Cloud messaging infrastructure, phone number provisioning, compliance workflows,
-                and communication APIs for software platforms.
-              </p>
+              <p>Cloud messaging infrastructure, phone number provisioning, compliance workflows, and communication APIs for software platforms.</p>
             </article>
-            <article class="service-card reveal">
-              <div class="service-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.7" />
-                  <path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            <article class="service reveal">
+              <div class="icon-circle" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
+                  <rect x="4" y="5" width="16" height="14" rx="2.2" stroke="currentColor" stroke-width="1.7"/>
+                  <path d="M8 9.5h8M8 13.5h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                 </svg>
               </div>
               <h3>Business Applications</h3>
-              <p>
-                Modern SaaS products that improve marketing, customer engagement, and operational
-                efficiency.
-              </p>
+              <p>Modern SaaS products that improve marketing, customer engagement, and operational efficiency.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt" id="products">
+      <section class="section section-soft" id="products">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Products</h2>
-            <p>Cloud applications built on Transovo AI software infrastructure.</p>
+            <h2>Our Products</h2>
           </div>
-          <div class="products-stack">
+          <div class="products-grid">
             <article class="product-card reveal">
               <div class="product-media" aria-hidden="true">
-                <svg viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" width="240">
-                  <rect width="260" height="160" rx="10" fill="#fff" />
-                  <rect x="14" y="14" width="70" height="132" rx="8" fill="#e8f1fa" />
-                  <rect x="96" y="14" width="150" height="40" rx="8" fill="#0b1f3a" />
-                  <rect x="96" y="66" width="70" height="80" rx="8" fill="#d7e8f8" />
-                  <rect x="176" y="66" width="70" height="80" rx="8" fill="#c5daf0" />
-                  <circle cx="49" cy="40" r="12" fill="#4a90e2" />
-                  <rect x="30" y="66" width="38" height="8" rx="4" fill="#9ec5ef" />
-                  <rect x="30" y="84" width="38" height="8" rx="4" fill="#9ec5ef" />
+                <svg viewBox="0 0 280 176" xmlns="http://www.w3.org/2000/svg" width="100%">
+                  <rect width="280" height="176" rx="10" fill="#fff"/>
+                  <rect x="12" y="12" width="72" height="152" rx="8" fill="#e8f1f9"/>
+                  <rect x="98" y="12" width="170" height="42" rx="8" fill="#0b2a4a"/>
+                  <rect x="110" y="24" width="70" height="8" rx="4" fill="#8fbee6"/>
+                  <rect x="110" y="38" width="46" height="6" rx="3" fill="#5b97cf"/>
+                  <rect x="98" y="68" width="80" height="96" rx="8" fill="#d7e8f6"/>
+                  <rect x="188" y="68" width="80" height="96" rx="8" fill="#c4dcf0"/>
+                  <circle cx="48" cy="40" r="14" fill="#3b82c4"/>
+                  <rect x="28" y="70" width="40" height="7" rx="3.5" fill="#9ec5e8"/>
+                  <rect x="28" y="86" width="40" height="7" rx="3.5" fill="#9ec5e8"/>
+                  <rect x="28" y="102" width="28" height="7" rx="3.5" fill="#9ec5e8"/>
+                  <rect x="112" y="84" width="52" height="8" rx="4" fill="#fff"/>
+                  <rect x="112" y="102" width="40" height="48" rx="6" fill="#fff" opacity="0.7"/>
+                  <rect x="202" y="84" width="52" height="8" rx="4" fill="#fff"/>
+                  <rect x="202" y="102" width="40" height="48" rx="6" fill="#fff" opacity="0.7"/>
                 </svg>
               </div>
               <div class="product-copy">
@@ -177,53 +167,63 @@
                 <a class="btn btn-primary" href="/solutions">Learn More</a>
               </div>
             </article>
-            <div class="product-slot reveal" aria-hidden="true">
-              More products coming soon
-            </div>
+
+            <article class="product-card compact reveal" aria-label="Future product">
+              <div class="icon-circle" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3c4.6 0 8.2 3.3 8.2 7.4 0 2.7-1.5 5-3.9 6.3L12 21l-4.3-4.3C5.3 15.4 3.8 13.1 3.8 10.4 3.8 6.3 7.4 3 12 3z" stroke="currentColor" stroke-width="1.7"/>
+                  <circle cx="12" cy="10.5" r="2.3" stroke="currentColor" stroke-width="1.7"/>
+                </svg>
+              </div>
+              <div class="product-copy">
+                <h3>Future Product</h3>
+                <p>Additional cloud applications will appear here as Transovo AI expands its platform.</p>
+              </div>
+            </article>
           </div>
+          <div class="products-future" aria-hidden="true"></div>
         </div>
       </section>
 
       <section class="section" id="industries">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Industries</h2>
-            <p>Built for organizations that need reliable software and communications technology.</p>
+            <h2>Industries We Serve</h2>
           </div>
           <div class="industries">
             <div class="industry reveal">
-              <div class="industry-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 10l8-6 8 6v10H4V10z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke="currentColor" stroke-width="1.7"/></svg>
+              <div class="icon-circle" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 10.5 12 4l8 6.5V20H4v-9.5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke="currentColor" stroke-width="1.7"/></svg>
               </div>
               <span>Local Businesses</span>
             </div>
             <div class="industry reveal">
-              <div class="industry-icon" aria-hidden="true">
+              <div class="icon-circle" aria-hidden="true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
               </div>
               <span>SaaS Platforms</span>
             </div>
             <div class="industry reveal">
-              <div class="industry-icon" aria-hidden="true">
+              <div class="icon-circle" aria-hidden="true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 16l5-5 3 3 8-8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 6h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
               </div>
               <span>Marketing Agencies</span>
             </div>
             <div class="industry reveal">
-              <div class="industry-icon" aria-hidden="true">
+              <div class="icon-circle" aria-hidden="true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="10" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="16" cy="10" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 19a4.5 4.5 0 0 1 9 0M11.5 19a4.5 4.5 0 0 1 9 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
               </div>
               <span>Service Businesses</span>
             </div>
             <div class="industry reveal">
-              <div class="industry-icon" aria-hidden="true">
+              <div class="icon-circle" aria-hidden="true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 7V5h8v2" stroke="currentColor" stroke-width="1.7"/></svg>
               </div>
               <span>Enterprise Teams</span>
             </div>
             <div class="industry reveal">
-              <div class="industry-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.2 4.5L19 8.2l-3.5 3.4.8 4.9L12 14.2 7.7 16.5l.8-4.9L5 8.2l4.8-.7L12 3z" stroke="currentColor" stroke-width="1.7"/></svg>
+              <div class="icon-circle" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.1 4.3L19 8l-3.4 3.3.8 4.7L12 13.8 7.6 16l.8-4.7L5 8l4.9-.7L12 3z" stroke="currentColor" stroke-width="1.7"/></svg>
               </div>
               <span>Technology Companies</span>
             </div>
@@ -231,36 +231,35 @@
         </div>
       </section>
 
-      <section class="section section-alt" id="why">
+      <section class="section section-soft" id="why">
         <div class="container">
           <div class="section-head reveal">
             <h2>Why Transovo AI</h2>
-            <p>Infrastructure and products designed for modern software businesses.</p>
           </div>
           <div class="why-grid">
             <article class="why-item reveal">
-              <div class="service-icon" aria-hidden="true">
+              <div class="icon-circle" aria-hidden="true">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V7l8-4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
               </div>
               <h3>Secure Infrastructure</h3>
               <p>Enterprise-grade cloud architecture.</p>
             </article>
             <article class="why-item reveal">
-              <div class="service-icon" aria-hidden="true">
+              <div class="icon-circle" aria-hidden="true">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M8 14a4 4 0 1 1 8 0c0 1.5-.8 2.4-1.6 3H9.6C8.8 16.4 8 15.5 8 14zM12 3v2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
               </div>
               <h3>AI Driven</h3>
               <p>Modern AI automation and workflow technology.</p>
             </article>
             <article class="why-item reveal">
-              <div class="service-icon" aria-hidden="true">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 8h16M4 16h16M8 4v16M16 4v16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              <div class="icon-circle" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4.5 8.5h15M4.5 15.5h15M8.5 4.5v15M15.5 4.5v15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
               </div>
               <h3>Communications</h3>
               <p>Reliable messaging and voice integrations.</p>
             </article>
             <article class="why-item reveal">
-              <div class="service-icon" aria-hidden="true">
+              <div class="icon-circle" aria-hidden="true">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 16l5-5 3 3 8-8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 6h6v6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
               </div>
               <h3>Scalable</h3>
@@ -273,13 +272,25 @@
       <section class="section" id="about">
         <div class="container about-grid">
           <div class="about-visual reveal" aria-hidden="true">
-            <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg" width="320">
-              <path d="M30 220h300" stroke="#8fb4d8" stroke-width="2" />
-              <path d="M60 220V140h40v80M110 220V100h55v120M175 220V150h45v70M230 220V90h50v130M290 220V160h30v60" fill="none" stroke="#1a4a8a" stroke-width="3" />
-              <rect x="120" y="115" width="12" height="12" fill="#7eb3f0" />
-              <rect x="145" y="115" width="12" height="12" fill="#7eb3f0" />
-              <rect x="245" y="105" width="12" height="12" fill="#7eb3f0" />
-              <path d="M40 140c30-40 70-40 100 0s70 40 100 0 70-40 90-10" fill="none" stroke="#9ec5ef" stroke-width="3" />
+            <svg viewBox="0 0 380 300" xmlns="http://www.w3.org/2000/svg" width="100%">
+              <path d="M24 232h332" stroke="#9fbfd9" stroke-width="2"/>
+              <g fill="none" stroke="#0d3a63" stroke-width="2.8" stroke-linejoin="round">
+                <path d="M54 232V148h42v84"/>
+                <path d="M108 232V108h58v124"/>
+                <path d="M178 232V156h48v76"/>
+                <path d="M238 232V96h54v136"/>
+                <path d="M304 232V168h34v64"/>
+              </g>
+              <g fill="#5b97cf">
+                <rect x="122" y="124" width="12" height="12"/>
+                <rect x="142" y="124" width="12" height="12"/>
+                <rect x="254" y="116" width="12" height="12"/>
+                <rect x="274" y="116" width="12" height="12"/>
+                <rect x="254" y="136" width="12" height="12"/>
+              </g>
+              <path d="M40 150c34-46 78-46 112 0s76 46 112 0 72-40 96-8" fill="none" stroke="#8fbee6" stroke-width="3.2" stroke-linecap="round"/>
+              <circle cx="70" cy="120" r="10" fill="none" stroke="#6ea8d8" stroke-width="2"/>
+              <path d="M70 112v16M62 120h16" stroke="#6ea8d8" stroke-width="2"/>
             </svg>
           </div>
           <div class="about-copy reveal">
@@ -292,9 +303,6 @@
             <p>
               Our focus is building reliable software infrastructure that powers modern business
               applications.
-            </p>
-            <p style="margin-top: 1.25rem">
-              <a class="btn btn-outline" href="/company">Company</a>
             </p>
           </div>
         </div>
@@ -313,7 +321,7 @@
           </div>
           <div class="contact-item">
             <div class="icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 8h16v10H4V8zm0 0l8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3c-2.2 2-4 4.7-4 7.5A4 4 0 0 0 12 15a4 4 0 0 0 4-4.5C16 7.7 14.2 5 12 3z" stroke="currentColor" stroke-width="1.7"/><path d="M8 18h8M10 21h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
             </div>
             <div>
               <strong>Support</strong>
@@ -347,21 +355,31 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <a class="logo" href="/">
-              <img class="logo-mark" src="/assets/logo.svg" alt="" width="34" height="34" />
+              <img class="logo-mark" src="/assets/logo.svg" alt="" width="36" height="36" />
               Transovo AI
             </a>
             <p>Transovo AI LLC</p>
             <p>Enterprise AI Software</p>
             <p>Communications Infrastructure</p>
             <p>Cloud Technology</p>
+            <div class="socials" aria-label="Social links">
+              <a href="https://facebook.com" aria-label="Facebook" rel="noopener noreferrer" target="_blank">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1z"/></svg>
+              </a>
+              <a href="https://x.com" aria-label="X" rel="noopener noreferrer" target="_blank">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l6.8 8.8L4.5 20H7l5-5.9L16.8 20H20l-7-9.1L19.3 4H16.8l-4.5 5.3L8 4H4z"/></svg>
+              </a>
+              <a href="https://linkedin.com" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 9H4V20h2.5V9zM5.2 4a1.6 1.6 0 1 0 .001 3.201A1.6 1.6 0 0 0 5.2 4zM20 20h-2.5v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.4.6-1.7 1.2-.1.2-.1.5-.1.8V20H11V9h2.4v1.5c.4-.7 1.2-1.7 2.9-1.7 2.1 0 3.7 1.4 3.7 4.4V20z"/></svg>
+              </a>
+            </div>
           </div>
           <div class="footer-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="/company">About</a></li>
+              <li><a href="/company">About Us</a></li>
               <li><a href="/contact">Contact</a></li>
               <li><a href="/solutions">Solutions</a></li>
-              <li><a href="/technology">Technology</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -373,15 +391,15 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Products</h4>
+            <h4>Solutions</h4>
             <ul>
-              <li><a href="/solutions">Local SEO Express</a></li>
+              <li><a href="/solutions">AI Software</a></li>
+              <li><a href="/solutions">Communications Platform</a></li>
+              <li><a href="/solutions">Business Applications</a></li>
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          © <span data-year>2026</span> Transovo AI LLC
-        </div>
+        <div class="footer-bottom">© <span data-year>2026</span> Transovo AI LLC</div>
       </div>
     </footer>
 

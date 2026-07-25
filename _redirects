@@ -1,0 +1,10 @@
+# Clean URLs for Cloudflare Pages
+/home / 301
+/home/ / 301
+/index.html / 301
+/about.html /about 301
+/solutions.html /solutions 301
+/technology.html /technology 301
+/company.html /company 301
+/careers.html /careers 301
+/contact.html /contact 301
